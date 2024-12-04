@@ -1,0 +1,97 @@
+/* Estilização Global */
+
+/* Título */
+
+
+
+/* Estilos dos Rótulos */
+label {
+    display: block;
+    font-size: 16px; /* Tamanho de fonte ligeiramente maior */
+    margin-bottom: 8px;
+    
+}
+
+/* Estilos dos Inputs e Selects */
+input, select {
+    width: calc(100% - 24px); /* Ajuste do tamanho para respeitar o padding */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Garante que o padding e a largura não extrapolem o contêiner */
+}
+
+input:focus, select:focus {
+    border-color: #25E3E0;
+    outline: none;
+    background-color: #e3f2fd;
+}
+
+/* Estilos dos Botões */
+button {
+    padding: 15px; /* Tamanho de botão ajustado */
+    background-color: #25E3E0;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    width: 100%; /* O botão ocupará toda a largura disponível */
+    max-width: 300px; /* Máximo de largura para telas grandes */
+   
+    display: block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #25E3E0;
+    transform: scale(1.02); /* Aumenta ligeiramente ao passar o mouse */
+}
+
+/* Mensagem de Erro ou Sucesso */
+.mensagem {
+    color: #4a90e2;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Botão para Visualizar Consultas */
+.button-view {
+    background-color: #25E3E0;
+    padding: 15px; /* Tamanho consistente para os botões */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+
+    transition: background-color 0.3s ease;
+}
+
+.button-view:hover {
+    background-color: #25E3E0;
+}
+.input-icon {
+    position: relative;
+}
+
+.input-icon input {
+    padding-left: 30px; /* Deixe espaço para o ícone */
+}
+
+.input-icon i {
+    position: absolute;
+    left: 10px; /* Distância do ícone ao lado esquerdo */
+    top: 50%; /* Mantém a posição vertical no meio */
+    margin-top: 3px; /* Adiciona espaço acima do ícone */
+    color: #999; /* Cor do ícone */
+}

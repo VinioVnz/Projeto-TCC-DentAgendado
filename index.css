@@ -1,0 +1,81 @@
+/* index.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-blur {
+    background-image: url('./imgs/backgroundimg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(0px); /* Ajusta o valor do blur aqui */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Coloque a imagem mais ao fundo */
+}
+
+.green-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 213, 210, 0.3); /* Cor verde com opacidade */
+    z-index: -1; /* Fica acima da imagem borrada */
+}
+
+nav {
+    background-color: rgba(35, 213, 210, 0.8); /* cor com 80% de opacidade */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    align-items: center;
+    list-style: none;
+    padding: 30px;
+}
+nav ul .logo {
+    margin-right: auto; /* Move "DentAgendado" para a extrema esquerda */
+    font-size: 25px;
+    color: white;
+   
+}
+
+nav ul li {
+    margin: 0 100px;
+    color: white;
+    font-size: 25px;
+    font-family: "Inter", sans-serif;
+}
+
+.btnEntrar {
+    background-color: #25E3E0;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 197px;
+}
+
